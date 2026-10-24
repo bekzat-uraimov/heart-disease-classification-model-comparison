@@ -11,7 +11,7 @@ Notebook: [heart_classification.ipynb](heart_classification.ipynb)
 
 ## Data
 
-The Heart dataset from *An Introduction to Statistical Learning*, a version of the UCI Cleveland heart disease data. It has 303 patients, 13 features and a Yes/No target, `AHD`.
+The Heart dataset from *Python for Data Science*, a version of the UCI Cleveland heart disease data. It has 303 patients, 13 features and a Yes/No target, `AHD`.
 
 - 6 rows have missing values (4 in `Ca`, 2 in `Thal`) and get dropped, leaving 297.
 - Classes are close to balanced: 160 No, 137 Yes.
@@ -55,8 +55,6 @@ The coefficients show what the penalty is doing:
 </picture>
 
 Going from C=1 to C=0.1, 15 of 16 coefficients move toward zero. `Ca` (number of major vessels colored by fluoroscopy) stays the strongest predictor either way.
-
-The exception is `Thal_normal`, which goes from +0.16 to −0.19. L2 shrinks the size of the coefficient vector as a whole, not each coefficient on its own. `Thal_normal` and `Thal_reversable` are dummies from the same column, so when the penalty cuts `Thal_reversable` in half, `Thal_normal` picks up some of its role.
 
 ## Takeaways
 
