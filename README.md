@@ -51,7 +51,7 @@ The coefficients show what the penalty is doing:
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="figures/heart_coefficients-dark.png">
-  <img alt="Logistic Regression coefficients for 16 features at C=1 and C=0.1. Ca has the largest coefficient, 1.14 at C=1 and 0.73 at C=0.1. 15 of 16 coefficients shrink toward zero; Thal_normal moves from 0.16 to -0.19." src="figures/heart_coefficients-light.png">
+  <img alt="Logistic Regression coefficients for 16 features at C=1 and C=0.1. Ca has the largest coefficient, 1.14 at C=1 and 0.73 at C=0.1. 15 of 16 coefficients shrink toward zero; Thal_normal moves from 0.16 to -0.18." src="figures/heart_coefficients-light.png">
 </picture>
 
 Going from C=1 to C=0.1, 15 of 16 coefficients move toward zero. `Ca` (number of major vessels colored by fluoroscopy) stays the strongest predictor either way.
