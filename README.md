@@ -56,6 +56,8 @@ The coefficients show what the penalty is doing:
 
 Going from C=1 to C=0.1, 15 of 16 coefficients move toward zero. `Ca` (number of major vessels colored by fluoroscopy) stays the strongest predictor either way.
 
+The one exception, `Thal_normal`, flips from slightly positive to negative, which fits the data better: patients with a normal scan have the lowest disease rate.
+
 ## Takeaways
 
 In this project, I learned how to build and compare classification models.
